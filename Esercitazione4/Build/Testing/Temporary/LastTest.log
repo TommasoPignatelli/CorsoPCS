@@ -1,0 +1,51 @@
+Start testing: Apr 01 10:43 UTC
+----------------------------------------------------------
+1/3 Testing: bubblesort
+1/3 Test: bubblesort
+Command: "/home/pcsdocker/Data/CorsoPCS/Esercitazione4/Build/test_bubblesort"
+Directory: /home/pcsdocker/Data/CorsoPCS/Esercitazione4/Build
+"bubblesort" start time: Apr 01 10:43 UTC
+Output:
+----------------------------------------------------------
+All vectors are sorted.
+<end of output>
+Test time =   0.09 sec
+----------------------------------------------------------
+Test Passed.
+"bubblesort" end time: Apr 01 10:43 UTC
+"bubblesort" time elapsed: 00:00:00
+----------------------------------------------------------
+
+2/3 Testing: insertionsort
+2/3 Test: insertionsort
+Command: "/home/pcsdocker/Data/CorsoPCS/Esercitazione4/Build/test_insertionsort"
+Directory: /home/pcsdocker/Data/CorsoPCS/Esercitazione4/Build
+"insertionsort" start time: Apr 01 10:43 UTC
+Output:
+----------------------------------------------------------
+All vectors are sorted.
+<end of output>
+Test time =   0.03 sec
+----------------------------------------------------------
+Test Passed.
+"insertionsort" end time: Apr 01 10:43 UTC
+"insertionsort" time elapsed: 00:00:00
+----------------------------------------------------------
+
+3/3 Testing: selectionsort
+3/3 Test: selectionsort
+Command: "/home/pcsdocker/Data/CorsoPCS/Esercitazione4/Build/test_selectionsort"
+Directory: /home/pcsdocker/Data/CorsoPCS/Esercitazione4/Build
+"selectionsort" start time: Apr 01 10:43 UTC
+Output:
+----------------------------------------------------------
+All vectors are sorted.
+<end of output>
+Test time =   0.05 sec
+----------------------------------------------------------
+Test Passed.
+"selectionsort" end time: Apr 01 10:43 UTC
+"selectionsort" time elapsed: 00:00:00
+----------------------------------------------------------
+
+End testing: Apr 01 10:43 UTC
