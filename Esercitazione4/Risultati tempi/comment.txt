@@ -1,0 +1,9 @@
+I tempi sono plottati per i 3 algoritmi implementati e confrontati con quello standard. 
+Il grafico plot mostra un andamento quadratico di bubblesort, selectionsort e insertionsort.
+Bubblesort risulta il più lento poichè effettua più scambi.
+Quello standard sembra lineare.
+
+Per un'analisi più approfondita c'è il grafico loglog (con assi logaritmici).
+Da questo osserviamo in effetti che l'inclinazione dei 3 algoritmi implementati èp maggiore.
+La lieve flessione tra n=4 e n=8 deriva da una "fortunata" disposizione iniziale nel vettore lungo 8, che richiede meno scambi di quello da 4.
+
