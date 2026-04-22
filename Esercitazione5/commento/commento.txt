@@ -1,0 +1,7 @@
+Come prima cosa, ricordiamo dalla scorsa esercitazione che insertionsort performa meglio tra i tre algoritmi di ordinamento O(n^2) visti a lezione.
+Osservo che la soglia n per la quale quicksort diventa sempre meglio di insertionsort è molto più bassa in debug che in release (circa 40 contro circa 190).
+Non sapendo in quale modalità avverrà la build, la funzione quicksort_mod in "quicksort_mod.h" chiama insertion solo se la size è <30, così sicuramente migliora 
+rispetto a quicksort (notare che se si builda certamente in release, si può alzare questa soglia almeno fino a 180 per risultati migliori).
+Osserviamo che su vettori di lunghezza 100 e 1000 e 10000 quicksort e quicksort modificato performano leggermente meglio di standardsort, vengono poi mergesort, 
+insertionsort, selectionsort e infine bubblesort.
+Su vettori di lunghezza 10,20 e 30, l'ordine dal più veloce al più lento è insertion, standard, quick, selection, bubble, merge.
