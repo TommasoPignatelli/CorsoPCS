@@ -38,7 +38,7 @@ int main()
 
     std::vector<size_t> lengths_of_vector;
     lengths_of_vector.resize(number_of_vectors);
-    rf.fill<size_t>(lengths_of_vector, 10, 10); /* use it on vectors */
+    rf.fill<size_t>(lengths_of_vector, 40, 40); /* use it on vectors */
 
     std::vector<std::vector<double>> vectors;
     vectors.reserve(number_of_vectors);
@@ -51,6 +51,7 @@ int main()
         vectors.push_back(new_vec);
     }
 
+    std::vector<std::vector<double>> vectors_backup = vectors; /* backup dei vettori da ordinare, per poterli riutilizzare con ogni algoritmo di ordinamento */
     //print_vector(vectors[0]);
     //std::cout << "Lunghezza dei vettori:\n";
     //print_vector(lengths_of_vector);
@@ -61,69 +62,73 @@ int main()
     // Test Bubblesort
     std::cout << "Bubblesort\n";
     tc.tic();
-    for (std::vector<double> vd : vectors)
+    for (std::vector<double>& vd : vectors)
     {
         bubblesort(vd);
     }
     av_time = tc.toc()/number_of_vectors;
     std::cout << "Average time: " << av_time << "\n";
     
+    vectors = vectors_backup; /* ripristina i vettori originali per il prossimo test */
     // Test Insertionsort
     std::cout << "Insertionsort\n";
     tc.tic();
-    for (std::vector<double> vd : vectors)
+    for (std::vector<double>& vd : vectors)
     {
         insertionsort(vd);
     }
     av_time = tc.toc()/number_of_vectors;
     std::cout << "Average time: " << av_time << "\n";
 
-    
+    vectors = vectors_backup; /* ripristina i vettori originali per il prossimo test */
     // Test Selectionsort
     std::cout << "Selectionsort\n";
     tc.tic();
-    for (std::vector<double> vd : vectors)
+    for (std::vector<double>& vd : vectors)
     {
         selectionsort(vd);
     }
     av_time = tc.toc()/number_of_vectors;
     std::cout << "Average time: " << av_time << "\n";
     
+    vectors = vectors_backup; /* ripristina i vettori originali per il prossimo test */
     // Test Mergesort
     std::cout << "Mergesort\n";
     tc.tic();
-    for (std::vector<double> vd : vectors)
+    for (std::vector<double>& vd : vectors)
     {
         mergesort(vd, 0, vd.size()-1);
     }
     av_time = tc.toc()/number_of_vectors;
     std::cout << "Average time: " << av_time << "\n";
 
+    vectors = vectors_backup; /* ripristina i vettori originali per il prossimo test */
     // Test Quicksort
     std::cout << "Quicksort\n";
     tc.tic();
-    for (std::vector<double> vd : vectors)
+    for (std::vector<double>& vd : vectors)
     {
         quicksort(vd, 0, vd.size()-1);
     }
     av_time = tc.toc()/number_of_vectors;
     std::cout << "Average time: " << av_time << "\n";
 
+    vectors = vectors_backup; /* ripristina i vettori originali per il prossimo test */
     // Test Quicksort modificato
     std::cout << "Quicksort modificato\n";
     tc.tic();
-    for (std::vector<double> vd : vectors)
+    for (std::vector<double>& vd : vectors)
     {
         quicksort_mod(vd, 0, vd.size()-1);
     }
     av_time = tc.toc()/number_of_vectors;
     std::cout << "Average time: " << av_time << "\n";
     
-
+    vectors = vectors_backup; /* ripristina i vettori originali per il prossimo test */
     // Test Standardsort
     std::cout << "Standardsort\n";
     tc.tic();
-    for (std::vector<double> vd : vectors)
+    for (std::vector<double>& vd : vectors)
     {
         std::sort(vd.begin(), vd.end());
     }
