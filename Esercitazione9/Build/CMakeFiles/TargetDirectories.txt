@@ -1,0 +1,3 @@
+/home/pcsdocker/Data/CorsoPCS/Esercitazione9/Build/CMakeFiles/main.dir
+/home/pcsdocker/Data/CorsoPCS/Esercitazione9/Build/CMakeFiles/edit_cache.dir
+/home/pcsdocker/Data/CorsoPCS/Esercitazione9/Build/CMakeFiles/rebuild_cache.dir
